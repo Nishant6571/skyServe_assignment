@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:8080/users/logout",
+        "https://skyserve-assignment.onrender.com/users/logout",
         {},
         {
           headers: {

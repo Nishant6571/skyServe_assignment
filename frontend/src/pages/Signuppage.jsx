@@ -30,7 +30,7 @@ const Signuppage = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/users/register",
+        "https://skyserve-assignment.onrender.com/users/register",
         {
           username,
           email,

@@ -29,10 +29,13 @@ const Loginpage = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/users/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://skyserve-assignment.onrender.com/users/login",
+        {
+          email,
+          password,
+        }
+      );
       console.log(response);
       if (response && response.data && response.data.token) {
         console.log(response.data);

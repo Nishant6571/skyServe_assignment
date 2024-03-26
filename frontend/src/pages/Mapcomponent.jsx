@@ -47,7 +47,7 @@ const Mapcomponent = () => {
       console.log("UserID:", userId);
 
       const response = await axios.patch(
-        `http://localhost:8080/users/saveGeoJSON/${userId}`,
+        `https://skyserve-assignment.onrender.com/users/saveGeoJSON/${userId}`,
         { GeoJSONData: geoData },
         {
           headers: {
